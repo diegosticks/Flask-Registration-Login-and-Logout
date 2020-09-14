@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Register</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Register</h1>
+        <form action="" method="POST">
+            <div class="form-group">
+                <input type="text" name="fname" class="form-control" placeholder="first name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="lname" class="form-control" placeholder="last name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" placeholder="username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirm" class="form-control" placeholder="confirm password" required>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Register">
+        </form>
+    </div>
+{% endblock %}
